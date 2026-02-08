@@ -1,0 +1,335 @@
+[
+  {
+    "scene": "Dorm front desk",
+    "sceneZh": "\u5bbf\u820d\u6ac3\u6aaf",
+    "npc": "Resident Assistant (RA)",
+    "npcZh": "\u5bbf\u820d\u52a9\u7406",
+    "sceneImage": "images/scene_3_1.png",
+    "dialogue": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "Hi. Checking in?",
+        "textZh": "\u4f60\u597d\uff0c\u8981\u5831\u5230\u55ce\uff1f",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "Great. Please fill out this form.",
+        "textZh": "\u597d\uff0c\u8acb\u586b\u9019\u5f35\u8868\u683c\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "Sure.",
+        "textZh": "\u597d\u7684\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "I need to ____ for the dorm.",
+    "sentenceZh": "\u6211\u9700\u8981\u70ba\u5bbf\u820d____\u3002",
+    "answer": "register",
+    "answerZh": "\u5831\u5230",
+    "origin": "From Latin 'reg' (rule/govern) + 'register'.",
+    "originZh": "\u6e90\u81ea reg\uff08\u7ba1\u7406\uff09\u7cfb\u5b57\u3002",
+    "context": "He checks in at the dorm.",
+    "contextZh": "\u4ed6\u5728\u5bbf\u820d\u5831\u5230\u3002",
+    "pos": "Verb needed",
+    "posZh": "\u9700\u8981\u52d5\u8a5e",
+    "category": "Dorm life",
+    "categoryZh": "\u5bbf\u820d\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Verb",
+        "valueZh": "\u52d5\u8a5e"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "need to + V",
+        "valueZh": "need to + V / \u9700\u8981\u53bb\u2026"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "register for",
+        "valueZh": "register for / \u5831\u540d\u3001\u5831\u5230"
+      }
+    ],
+    "hints": [
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "reg (rule/govern)",
+        "valueZh": "reg\uff08\u7ba1\u7406\u3001\u898f\u5247\uff09",
+        "hidden": false
+      },
+      {
+        "label": "word family",
+        "labelZh": "\u540c\u5b57\u65cf",
+        "value": "regular / regulate / registration",
+        "valueZh": "regular / regulate / registration",
+        "hidden": true
+      },
+      {
+        "label": "origin",
+        "labelZh": "\u4f86\u6e90",
+        "value": "Latin reg-",
+        "valueZh": "\u62c9\u4e01\u8a9e reg-",
+        "hidden": true
+      }
+    ],
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "New student check-in action.",
+        "zh": "\u65b0\u751f\u5831\u5230\u7684\u52d5\u4f5c\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: need to + V.",
+        "zh": "\u53e5\u578b\uff1aneed to + V\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Starts with reg-.",
+        "zh": "reg- \u958b\u982d\u3002"
+      }
+    ]
+  },
+  {
+    "scene": "Payment counter",
+    "sceneZh": "\u7e73\u8cbb\u6ac3\u6aaf",
+    "npc": "RA",
+    "npcZh": "\u5bbf\u820d\u52a9\u7406",
+    "sceneImage": "images/scene_3_2.png",
+    "dialogue": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "There's a refundable fee before you get the keycard.",
+        "textZh": "\u62ff\u5230\u9580\u7981\u5361\u524d\uff0c\u6709\u4e00\u7b46\u53ef\u9000\u7684\u8cbb\u7528\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "Yes. Card is fine.",
+        "textZh": "\u53ef\u4ee5\uff0c\u5237\u5361\u5c31\u884c\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "Okay.",
+        "textZh": "\u597d\u7684\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "Do I need to pay a ____?",
+    "sentenceZh": "\u6211\u9700\u8981\u4ed8\u4e00\u7b46____\u55ce\uff1f",
+    "answer": "deposit",
+    "answerZh": "\u62bc\u91d1",
+    "origin": "From Latin 'de' (down) + 'posit' (place).",
+    "originZh": "\u6e90\u81ea de-\uff08\u5411\u4e0b\uff09+ posit\uff08\u653e\u7f6e\uff09\u3002",
+    "context": "He asks about a refundable payment.",
+    "contextZh": "\u4ed6\u554f\u53ef\u9000\u7684\u4ed8\u6b3e\u3002",
+    "pos": "Noun needed",
+    "posZh": "\u9700\u8981\u540d\u8a5e",
+    "category": "Dorm life",
+    "categoryZh": "\u5bbf\u820d\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Noun",
+        "valueZh": "\u540d\u8a5e"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "pay a + noun",
+        "valueZh": "pay a + \u540d\u8a5e"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "pay a deposit",
+        "valueZh": "pay a deposit / \u4ed8\u62bc\u91d1"
+      }
+    ],
+    "hints": [
+      {
+        "label": "prefix",
+        "labelZh": "\u5b57\u9996",
+        "value": "de- (down)",
+        "valueZh": "de-\uff08\u5411\u4e0b\uff09",
+        "hidden": false
+      },
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "posit (place)",
+        "valueZh": "posit\uff08\u653e\u7f6e\uff09",
+        "hidden": true
+      },
+      {
+        "label": "word family",
+        "labelZh": "\u540c\u5b57\u65cf",
+        "value": "position / positive / deposit",
+        "valueZh": "position / positive / deposit",
+        "hidden": true
+      }
+    ],
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "Refundable fee.",
+        "zh": "\u53ef\u9000\u7684\u8cbb\u7528\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: pay a + noun.",
+        "zh": "\u53e5\u578b\uff1apay a + \u540d\u8a5e\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Starts with de-.",
+        "zh": "de- \u958b\u982d\u3002"
+      }
+    ]
+  },
+  {
+    "scene": "Hallway",
+    "sceneZh": "\u5bbf\u820d\u8d70\u5eca",
+    "npc": "RA",
+    "npcZh": "\u5bbf\u820d\u52a9\u7406",
+    "sceneImage": "images/scene_3_3.png",
+    "dialogue": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "If anything breaks, don't panic. Just submit a request online.",
+        "textZh": "\u6771\u897f\u58de\u4e86\u5225\u7dca\u5f35\uff0c\u76f4\u63a5\u7dda\u4e0a\u9001\u51fa\u7533\u8acb\u5373\u53ef\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "RA",
+        "speakerZh": "\u5bbf\u820d\u52a9\u7406",
+        "text": "Use the housing portal.",
+        "textZh": "\u7528\u5bbf\u820d\u7cfb\u7d71\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "Got it.",
+        "textZh": "\u4e86\u89e3\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "How do I request ____?",
+    "sentenceZh": "\u6211\u8981\u600e\u9ebc\u7533\u8acb____\uff1f",
+    "answer": "maintenance",
+    "answerZh": "\u5831\u4fee",
+    "origin": "From Latin 'maintain' + suffix '-ance'.",
+    "originZh": "\u6e90\u81ea maintain + -ance\uff08\u540d\u8a5e\uff09\u3002",
+    "context": "He asks about repairs.",
+    "contextZh": "\u4ed6\u554f\u5831\u4fee\u7684\u6d41\u7a0b\u3002",
+    "pos": "Noun needed",
+    "posZh": "\u9700\u8981\u540d\u8a5e",
+    "category": "Dorm life",
+    "categoryZh": "\u5bbf\u820d\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Noun",
+        "valueZh": "\u540d\u8a5e"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "request + noun",
+        "valueZh": "request + \u540d\u8a5e"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "request maintenance",
+        "valueZh": "request maintenance / \u7533\u8acb\u5831\u4fee"
+      }
+    ],
+    "hints": [
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "maintain (keep in good state)",
+        "valueZh": "maintain\uff08\u7dad\u6301\uff09",
+        "hidden": false
+      },
+      {
+        "label": "suffix",
+        "labelZh": "\u5b57\u5c3e",
+        "value": "-ance (noun)",
+        "valueZh": "-ance\uff08\u540d\u8a5e\uff09",
+        "hidden": true
+      },
+      {
+        "label": "word family",
+        "labelZh": "\u540c\u5b57\u65cf",
+        "value": "maintain / maintenance",
+        "valueZh": "maintain / maintenance",
+        "hidden": true
+      }
+    ],
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "Repair/maintenance service.",
+        "zh": "\u4fee\u7406\u3001\u7dad\u4fee\u7684\u4e8b\u9805\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: request + noun.",
+        "zh": "\u53e5\u578b\uff1arequest + \u540d\u8a5e\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Contains maintain, ends with -ance.",
+        "zh": "maintain \u540c\u5b57\u6839\uff0c-ance \u7d50\u5c3e\u3002"
+      }
+    ]
+  }
+]

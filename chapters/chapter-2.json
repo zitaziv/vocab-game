@@ -1,0 +1,343 @@
+[
+  {
+    "scene": "Underground station",
+    "sceneZh": "\u5730\u9435\u7ad9",
+    "npc": "Staff",
+    "npcZh": "\u7ad9\u52d9\u4eba\u54e1",
+    "sceneImage": "images/scene_2_1.png",
+    "dialogue": [
+      {
+        "speaker": "Staff",
+        "speakerZh": "\u7ad9\u52d9\u4eba\u54e1",
+        "text": "Where are you heading?",
+        "textZh": "\u4f60\u8981\u53bb\u54ea\u88e1\uff1f",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "Staff",
+        "speakerZh": "\u7ad9\u52d9\u4eba\u54e1",
+        "text": "Alright. Two stops from here.",
+        "textZh": "\u597d\uff0c\u5f9e\u9019\u88e1\u4e8c\u7ad9\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "Thanks.",
+        "textZh": "\u8b1d\u8b1d\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "I'm going to the ____. ",
+    "sentenceZh": "\u6211\u8981\u53bb____\u3002",
+    "answer": "supermarket",
+    "answerZh": "\u8d85\u5e02",
+    "origin": "From Latin 'super' (above) + 'market'.",
+    "originZh": "\u4f86\u81ea super\uff08\u4e0a\uff09+ market\u3002",
+    "context": "He says where he's going.",
+    "contextZh": "\u4ed6\u8aaa\u660e\u8981\u53bb\u7684\u5730\u65b9\u3002",
+    "pos": "Noun needed",
+    "posZh": "\u9700\u8981\u540d\u8a5e",
+    "category": "Daily life",
+    "categoryZh": "\u65e5\u5e38\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Noun (place)",
+        "valueZh": "\u540d\u8a5e\uff08\u5730\u9ede\uff09"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "I'm going to the ___ .",
+        "valueZh": "I'm going to the ___ . / \u6211\u8981\u53bb___\u3002"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "go to the supermarket",
+        "valueZh": "go to the supermarket / \u53bb\u8d85\u5e02"
+      }
+    ],
+    "hints": [
+      {
+        "label": "prefix",
+        "labelZh": "\u5b57\u9996",
+        "value": "super- (above, extra)",
+        "valueZh": "super-\uff08\u8d85\u3001\u8d85\u7d1a\uff09",
+        "hidden": false
+      },
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "market (place to buy)",
+        "valueZh": "market\uff08\u8cb7\u8ce3\u5730\u65b9\uff09",
+        "hidden": true
+      },
+      {
+        "label": "origin",
+        "labelZh": "\u4f86\u6e90",
+        "value": "super + market",
+        "valueZh": "super + market",
+        "hidden": true
+      }
+    ],
+    "bridge": {
+      "en": "He checks the map and walks toward the ticket gates.",
+      "zh": "\u4ed6\u770b\u4e86\u5730\u5716\uff0c\u8d70\u5411\u9580\u7981\u3002"
+    },
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "Place for daily shopping.",
+        "zh": "\u65e5\u5e38\u8cb7\u6771\u897f\u7684\u5730\u65b9\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: I'm going to the ___.",
+        "zh": "\u53e5\u578b\uff1aI'm going to the ___.\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Starts with s-, ends with -t.",
+        "zh": "s- \u958b\u982d\uff0c-t \u7d50\u5c3e\u3002"
+      }
+    ]
+  },
+  {
+    "scene": "Ticket machine",
+    "sceneZh": "\u552e\u7968\u6a5f",
+    "npc": "Machine",
+    "npcZh": "\u552e\u7968\u6a5f",
+    "sceneImage": "images/scene_2_2.png",
+    "dialogue": [
+      {
+        "speaker": "Machine",
+        "speakerZh": "\u552e\u7968\u6a5f",
+        "text": "Single or return?",
+        "textZh": "\u55ae\u7a0b\u9084\u662f\u4f86\u56de\uff1f",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "Machine",
+        "speakerZh": "\u552e\u7968\u6a5f",
+        "text": "Payment accepted.",
+        "textZh": "\u4ed8\u6b3e\u5b8c\u6210\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "Great.",
+        "textZh": "\u592a\u597d\u4e86\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "I need a ____ ticket.",
+    "sentenceZh": "\u6211\u9700\u8981\u4e00\u5f35____\u7968\u3002",
+    "answer": "single",
+    "answerZh": "\u55ae\u7a0b",
+    "origin": "From Latin 'singulus' meaning one.",
+    "originZh": "\u6e90\u81ea\u62c9\u4e01\u8a9e singulus\uff0c\u610f\u70ba\u300c\u4e00\u300d\u3002",
+    "context": "He chooses the ticket type.",
+    "contextZh": "\u4ed6\u9078\u64c7\u7968\u7a2e\u3002",
+    "pos": "Adjective needed",
+    "posZh": "\u9700\u8981\u5f62\u5bb9\u8a5e",
+    "category": "Daily life",
+    "categoryZh": "\u65e5\u5e38\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Adjective",
+        "valueZh": "\u5f62\u5bb9\u8a5e"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "I need a ___ ticket.",
+        "valueZh": "I need a ___ ticket. / \u6211\u9700\u8981\u4e00\u5f35___\u7968\u3002"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "single ticket",
+        "valueZh": "\u55ae\u7a0b\u7968"
+      }
+    ],
+    "hints": [
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "singul (one)",
+        "valueZh": "singul\uff08\u4e00\uff09",
+        "hidden": false
+      },
+      {
+        "label": "origin",
+        "labelZh": "\u4f86\u6e90",
+        "value": "Latin singulus",
+        "valueZh": "\u62c9\u4e01\u8a9e singulus",
+        "hidden": true
+      },
+      {
+        "label": "meaning",
+        "labelZh": "\u610f\u601d",
+        "value": "one-way",
+        "valueZh": "\u55ae\u7a0b",
+        "hidden": true
+      }
+    ],
+    "bridge": {
+      "en": "Ticket in hand, he heads to the platform.",
+      "zh": "\u62ff\u5230\u7968\u5f8c\uff0c\u4ed6\u8d70\u5411\u6708\u53f0\u3002"
+    },
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "One-way ticket type.",
+        "zh": "\u55ae\u7a0b\u7968\u7a2e\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: I need a ___ ticket.",
+        "zh": "\u53e5\u578b\uff1aI need a ___ ticket.\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Starts with s-, ends with -e.",
+        "zh": "s- \u958b\u982d\uff0c-e \u7d50\u5c3e\u3002"
+      }
+    ]
+  },
+  {
+    "scene": "Platform",
+    "sceneZh": "\u6708\u53f0",
+    "npc": "Passenger",
+    "npcZh": "\u4e58\u5ba2",
+    "sceneImage": "images/scene_2_3.png",
+    "dialogue": [
+      {
+        "speaker": "Passenger",
+        "speakerZh": "\u4e58\u5ba2",
+        "text": "Is this train going in the right direction?",
+        "textZh": "\u9019\u73ed\u8eca\u662f\u4e0d\u662f\u5f80\u6b63\u78ba\u65b9\u5411\uff1f",
+        "side": "left"
+      },
+      {
+        "speaker": "You (thinking)",
+        "speakerZh": "\u4f60\uff08\u5fc3\u88e1\uff09",
+        "text": "",
+        "textZh": "",
+        "side": "right"
+      }
+    ],
+    "followUp": [
+      {
+        "speaker": "Passenger",
+        "speakerZh": "\u4e58\u5ba2",
+        "text": "Thanks, that helps.",
+        "textZh": "\u8b1d\u8b1d\uff0c\u9019\u5f88\u6709\u5e6b\u52a9\u3002",
+        "side": "left"
+      },
+      {
+        "speaker": "You",
+        "speakerZh": "\u4f60",
+        "text": "No problem.",
+        "textZh": "\u4e0d\u5ba2\u6c23\u3002",
+        "side": "right"
+      }
+    ],
+    "sentence": "Yes, it's going in the right ____.",
+    "sentenceZh": "\u662f\u7684\uff0c\u5b83\u5f80\u6b63\u78ba\u7684____\u3002",
+    "answer": "direction",
+    "answerZh": "\u65b9\u5411",
+    "origin": "From Latin 'dirigere' (to guide, to align).",
+    "originZh": "\u6e90\u81ea\u62c9\u4e01\u8a9e dirigere\uff08\u5f15\u5c0e\u3001\u5c0d\u9f4a\uff09\u3002",
+    "context": "He confirms the route.",
+    "contextZh": "\u4ed6\u78ba\u8a8d\u8def\u7dda\u3002",
+    "pos": "Noun needed",
+    "posZh": "\u9700\u8981\u540d\u8a5e",
+    "category": "Daily life",
+    "categoryZh": "\u65e5\u5e38\u751f\u6d3b",
+    "grammar": [
+      {
+        "label": "POS",
+        "labelZh": "\u8a5e\u6027",
+        "value": "Noun",
+        "valueZh": "\u540d\u8a5e"
+      },
+      {
+        "label": "Pattern",
+        "labelZh": "\u53e5\u578b",
+        "value": "the right ___",
+        "valueZh": "the right ___ / \u6b63\u78ba\u7684___"
+      },
+      {
+        "label": "Collocation",
+        "labelZh": "\u642d\u914d",
+        "value": "right direction",
+        "valueZh": "\u6b63\u78ba\u65b9\u5411"
+      }
+    ],
+    "hints": [
+      {
+        "label": "root",
+        "labelZh": "\u5b57\u6839",
+        "value": "dir (guide)",
+        "valueZh": "dir\uff08\u5f15\u5c0e\uff09",
+        "hidden": false
+      },
+      {
+        "label": "suffix",
+        "labelZh": "\u5b57\u5c3e",
+        "value": "-tion (noun)",
+        "valueZh": "-tion\uff08\u540d\u8a5e\uff09",
+        "hidden": true
+      },
+      {
+        "label": "origin",
+        "labelZh": "\u4f86\u6e90",
+        "value": "Latin dirigere",
+        "valueZh": "\u62c9\u4e01\u8a9e dirigere",
+        "hidden": true
+      }
+    ],
+    "thinkingHints": [
+      {
+        "tier": 1,
+        "en": "Which way the train goes.",
+        "zh": "\u5217\u8eca\u524d\u9032\u7684\u65b9\u5411\u3002"
+      },
+      {
+        "tier": 2,
+        "en": "Pattern: in the right ___.",
+        "zh": "\u53e5\u578b\uff1ain the right ___.\u3002"
+      },
+      {
+        "tier": 3,
+        "en": "Starts with d-, ends with -n.",
+        "zh": "d- \u958b\u982d\uff0c-n \u7d50\u5c3e\u3002"
+      }
+    ]
+  }
+]
