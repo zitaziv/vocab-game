@@ -1,0 +1,17 @@
+[
+  {
+    "id": "chapter-1",
+    "title": "Immigration Counter / \u6d77\u95dc\u6ac3\u6aaf",
+    "file": "chapters/chapter-1.json"
+  },
+  {
+    "id": "chapter-2",
+    "title": "Transport / \u4ea4\u901a",
+    "file": "chapters/chapter-2.json"
+  },
+  {
+    "id": "chapter-3",
+    "title": "Dorm Check-in / \u5bbf\u820d\u5831\u5230",
+    "file": "chapters/chapter-3.json"
+  }
+]

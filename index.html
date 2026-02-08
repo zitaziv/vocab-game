@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recall Quest - English Cloze Prototype / 回想任務：英文填空原型</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Top bar: brand + stats -->
+      <header class="topbar reveal" style="--d: 0s">
+        <div class="brand">
+          <h1 id="brand-title">Recall Quest</h1>
+          <p class="dual-line">
+            <span id="tagline-en">Think it back. Type it out. Speak it right.</span>
+            <span class="zh" id="tagline-zh">想起來、打出來、說對它。</span>
+          </p>
+        </div>
+        <div class="stats">
+          <div class="stat chapter-select">
+            <div class="stat-label dual-line">
+              <span>Chapter Select</span>
+              <span class="zh">章節選擇</span>
+            </div>
+            <button class="chapter-button" id="chapter-button" type="button">
+              <span id="chapter-current">Immigration Counter / 海關櫃檯</span>
+            </button>
+            <select id="chapter-select" class="chapter-dropdown" hidden></select>
+          </div>
+          <div class="stat">
+            <div class="stat-label dual-line">
+              <span id="stat-chapter-en">Chapter</span>
+              <span class="zh" id="stat-chapter-zh">章節</span>
+            </div>
+            <div class="stat-value" id="chapter-label">Chapter 1 / 第 1 章</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label dual-line">
+              <span id="stat-hp-en">Social HP</span>
+              <span class="zh" id="stat-hp-zh">社交生命</span>
+            </div>
+            <div class="stat-value" id="hp-label">3 / 3</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label dual-line">
+              <span id="stat-streak-en">Streak</span>
+              <span class="zh" id="stat-streak-zh">連勝</span>
+            </div>
+            <div class="stat-value" id="streak-label">6</div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Mobile tabs for panel switching -->
+      <div class="tabs reveal" style="--d: 0.1s">
+        <button class="tab-btn active" data-target="morph-panel" type="button">
+          <span id="tab-morph-en">Morph Hints</span>
+          <span class="zh" id="tab-morph-zh">形態提示</span>
+        </button>
+        <button class="tab-btn" data-target="grammar-panel" type="button">
+          <span id="tab-grammar-en">Grammar</span>
+          <span class="zh" id="tab-grammar-zh">文法</span>
+        </button>
+      </div>
+
+      <!-- Main layout: morph hints / scene / grammar -->
+      <main class="board">
+        <!-- Left panel: morphology hints -->
+        <aside class="panel reveal active" data-panel="morph" id="morph-panel" style="--d: 0.15s">
+          <h2 class="dual-line">
+            <span id="panel-morph-en">Morph Hints</span>
+            <span class="zh" id="panel-morph-zh">形態提示</span>
+          </h2>
+          <ul class="hint-list" id="morph-list"></ul>
+          <div class="panel-actions">
+            <button class="btn" id="reveal-hint" type="button">
+              <span id="btn-reveal-en">Reveal Hint</span>
+              <span class="zh" id="btn-reveal-zh">揭示提示</span>
+            </button>
+            <button class="btn secondary" id="next-challenge" type="button">
+              <span id="btn-next-en">Next</span>
+              <span class="zh" id="btn-next-zh">下一題</span>
+            </button>
+            <label class="tts-toggle" for="tts-toggle">
+              <input type="checkbox" id="tts-toggle" checked />
+              <span>TTS</span>
+            </label>
+          </div>
+        </aside>
+
+        <!-- Scene: dialogue + cloze bubble -->
+        <section class="scene reveal" style="--d: 0.2s">
+          <div class="scene-header">
+            <div class="scene-title dual-line">
+              <span id="scene-title-en">Situation</span>
+              <span class="zh" id="scene-title-zh">情境</span>
+            </div>
+            <div class="npc-card dual-line">
+              <span id="npc-en">NPC: Ticket clerk</span>
+              <span class="zh" id="npc-zh">角色：售票員</span>
+            </div>
+          </div>
+          <div class="scene-visual" id="scene-visual">
+            <div class="scene-placeholder dual-line" id="scene-placeholder" hidden>
+              <span>Image unavailable</span>
+              <span class="zh">圖片載入失敗</span>
+            </div>
+            <div class="interlude" id="interlude" hidden>
+              <div class="interlude-card">
+                <div class="interlude-title">Story Link</div>
+                <div class="interlude-text" id="interlude-en"></div>
+                <div class="interlude-text zh" id="interlude-zh"></div>
+                <div class="interlude-hint">Click / Space to continue</div>
+              </div>
+            </div>
+            <div class="scene-bubble">
+              <!-- Dialogue before cloze -->
+              <div class="dialogue" id="dialogue-before"></div>
+              <!-- Cloze answer line (shown only at cloze step) -->
+              <div class="dialogue-line right answer-line" id="answer-line" hidden>
+                <div class="speaker dual-line">
+                  <span id="answer-speaker-en">You</span>
+                  <span class="zh" id="answer-speaker-zh">你</span>
+                </div>
+                <div class="sentence-line" id="sentence-en">
+                  Is this ticket <span class="blank" id="blank-slot">____</span>?
+                </div>
+                <div class="sentence-zh" id="sentence-zh">這張票是____的嗎？</div>
+              </div>
+              <!-- Follow-up dialogue after correct answer -->
+              <div class="dialogue after" id="dialogue-after"></div>
+              <!-- Word origin (revealed after correct answer) -->
+              <div class="origin-box" id="origin-box" hidden>
+                <div class="origin-title dual-line">
+                  <span id="origin-title-en">Word Origin</span>
+                  <span class="zh" id="origin-title-zh">字源說明</span>
+                </div>
+                <div class="origin-text" id="origin-text-en"></div>
+                <div class="origin-text zh" id="origin-text-zh"></div>
+              </div>
+              <!-- Word family card (revealed after correct answer) -->
+              <div class="origin-box" id="family-box" hidden>
+                <div class="origin-title dual-line">
+                  <span>Word Family</span>
+                  <span class="zh">同字族</span>
+                </div>
+                <div class="origin-text" id="family-text-en"></div>
+                <div class="origin-text zh" id="family-text-zh"></div>
+              </div>
+              <!-- Context line -->
+              <div class="scene-context" id="scene-context">
+                <span id="context-en">At the train station counter.</span>
+                <span class="zh" id="context-zh">在火車站櫃檯。</span>
+              </div>
+              <!-- VN advance indicator -->
+              <div class="vn-indicator" id="vn-indicator" hidden aria-hidden="true">▶</div>
+            </div>
+          </div>
+          <div class="prompt-chip" id="pos-chip">Adj needed / 需要形容詞</div>
+        </section>
+
+        <!-- Right panel: grammar hints -->
+        <aside class="panel reveal" data-panel="grammar" id="grammar-panel" style="--d: 0.25s">
+          <h2 class="dual-line">
+            <span id="panel-grammar-en">Grammar</span>
+            <span class="zh" id="panel-grammar-zh">文法</span>
+          </h2>
+          <ul class="hint-list" id="grammar-list"></ul>
+          <div class="panel-actions">
+            <button class="btn" id="refresh-pattern" type="button">
+              <span id="btn-shuffle-en">Shuffle Pattern</span>
+              <span class="zh" id="btn-shuffle-zh">打亂句型</span>
+            </button>
+          </div>
+        </aside>
+      </main>
+
+      <!-- Input bar: shown only during cloze steps -->
+      <div class="input-bar reveal" id="input-bar" style="--d: 0.3s" hidden>
+        <div class="input-area">
+          <input
+            id="answer-input"
+            type="text"
+            placeholder="Type the missing word... / 請輸入缺少的單字"
+            autocomplete="off"
+          />
+          <div class="status dual-line" id="status-line">
+            <span>Use context + hints to recall the word.</span>
+            <span class="zh">用情境與提示把單字想回來。</span>
+          </div>
+        </div>
+          <div class="input-actions">
+            <button class="btn" id="toggle-handwriting" type="button">
+              <span id="btn-handwriting-en">Handwriting</span>
+              <span class="zh" id="btn-handwriting-zh">手寫</span>
+            </button>
+            <button class="btn secondary" id="submit-answer" type="button">
+              <span id="btn-submit-en">Submit</span>
+              <span class="zh" id="btn-submit-zh">送出</span>
+            </button>
+            <button class="btn" id="erase-answer" type="button">
+              <span id="btn-erase-en">Erase</span>
+              <span class="zh" id="btn-erase-zh">清除</span>
+            </button>
+          </div>
+        </div>
+    </div>
+
+    <div class="completion-screen" id="completion-screen" hidden>
+      <div class="completion-card">
+        <h2>All Clear!</h2>
+        <p class="zh">恭喜完成所有題目。</p>
+        <div class="completion-badges" id="completion-badges"></div>
+        <button class="btn secondary" id="restart-game" type="button">
+          <span>Play Again</span>
+          <span class="zh">再玩一次</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="chapter-panel" id="chapter-panel" hidden>
+      <div class="chapter-panel-card">
+        <div class="chapter-panel-title">Select Chapter</div>
+        <div class="chapter-panel-title zh">選擇章節</div>
+        <div class="chapter-cards" id="chapter-cards"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

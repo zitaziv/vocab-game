@@ -1,0 +1,150 @@
+﻿{
+  "meta": {
+    "title": "Recall Quest - English Cloze Prototype / 回想任務：英文填空原型"
+  },
+  "brand": {
+    "title": "Recall Quest",
+    "tagline": {
+      "en": "Think it back. Type it out. Speak it right.",
+      "zh": "想起來、打出來、說對它。"
+    }
+  },
+  "stats": {
+    "chapter": {
+      "en": "Chapter",
+      "zh": "章節"
+    },
+    "chapterValue": "Chapter 1 / 第 1 章",
+    "hp": {
+      "en": "Social HP",
+      "zh": "社交生命"
+    },
+    "hpValue": "3 / 3",
+    "streak": {
+      "en": "Streak",
+      "zh": "連勝"
+    },
+    "streakValue": "6"
+  },
+  "tabs": {
+    "morph": {
+      "en": "Morph Hints",
+      "zh": "形態提示"
+    },
+    "grammar": {
+      "en": "Grammar",
+      "zh": "文法"
+    }
+  },
+  "panels": {
+    "morph": {
+      "en": "Morph Hints",
+      "zh": "形態提示"
+    },
+    "grammar": {
+      "en": "Grammar",
+      "zh": "文法"
+    }
+  },
+  "buttons": {
+    "revealHint": {
+      "en": "Reveal Hint",
+      "zh": "揭示提示"
+    },
+    "next": {
+      "en": "Next",
+      "zh": "下一題"
+    },
+    "shufflePattern": {
+      "en": "Shuffle Pattern",
+      "zh": "打亂句型"
+    },
+    "handwriting": {
+      "en": "Handwriting",
+      "zh": "手寫"
+    },
+    "submit": {
+      "en": "Submit",
+      "zh": "送出"
+    },
+    "erase": {
+      "en": "Erase",
+      "zh": "清除"
+    }
+  },
+  "input": {
+    "placeholder": "Type the missing word... / 請輸入缺少的單字",
+    "statusDefault": {
+      "en": "Use context + hints to recall the word.",
+      "zh": "用情境與提示把單字想回來。"
+    }
+  },
+  "labels": {
+    "scenePrefix": {
+      "en": "Situation: ",
+      "zh": "情境："
+    },
+    "npcPrefix": {
+      "en": "NPC: ",
+      "zh": "角色："
+    },
+    "originTitle": {
+      "en": "Word Origin",
+      "zh": "字源說明"
+    }
+  },
+  "answerSpeaker": {
+    "en": "You",
+    "zh": "你"
+  },
+  "messages": {
+    "loadChallengesFail": {
+      "en": "Failed to load challenges.json. Use a local server to open this page.",
+      "zh": "載入 challenges.json 失敗，請用本地伺服器開啟此頁。"
+    },
+    "noChallenges": {
+      "en": "No challenges loaded.",
+      "zh": "沒有題庫。"
+    },
+    "pressNext": {
+      "en": "Press Next to continue.",
+      "zh": "請按下一題繼續。"
+    },
+    "solveFirst": {
+      "en": "Solve the sentence first.",
+      "zh": "先完成填空再前進。"
+    },
+    "typeMissing": {
+      "en": "Type the missing word.",
+      "zh": "請輸入缺少的單字。"
+    },
+    "correctPressNext": {
+      "en": "Correct. Press Next to continue.",
+      "zh": "正確。按下一題繼續。"
+    },
+    "cleared": {
+      "en": "Cleared. Try again.",
+      "zh": "已清除，請再試一次。"
+    },
+    "allHintsRevealed": {
+      "en": "All hints already revealed.",
+      "zh": "提示已全部揭露。"
+    },
+    "hintRevealed": {
+      "en": "Hint revealed: {label} {value}",
+      "zh": "已揭露提示：{label} {value}"
+    },
+    "wrongHint": {
+      "en": "Not quite. Hint: {label} {value}",
+      "zh": "不太對，再看提示：{label} {value}"
+    },
+    "wrongPos": {
+      "en": "Not quite. POS: {pos}.",
+      "zh": "不太對，注意詞性：{pos}。"
+    },
+    "storyContinues": {
+      "en": "Story continues...",
+      "zh": "故事繼續…"
+    }
+  }
+}
